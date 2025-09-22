@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.loaderWrapper {
+.LoaderWrapper {
   position: absolute;
   inset: 0;
   display: flex;
@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-.loaderWrapper.hidden {
+.LoaderWrapper.hidden {
   opacity: 0;
   pointer-events: none;
 }

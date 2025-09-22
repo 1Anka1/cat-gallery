@@ -1,8 +1,8 @@
 import { CatGalleryItem } from '../CatGalleryItem/CatGalleryItem';
-import css from './CatGallery.module.css';
 import { Loader } from '../Loader/Loader';
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
+import css from './CatGallery.module.css';
 
 export const CatGallery = ({ data, isLoading }) => {
   const [selectedCat, setSelectedCat] = useState(null);

@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Loader } from '../Loader/Loader';
 import css from './CatGalleryItem.module.css';
+
 export const CatGalleryItem = ({ url, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <li onClick={() => onClick(url)} className={css.CatGalleryItem}>
-      <div className={`${css.loaderWrapper} ${isLoaded ? css.hidden : ''}`}>
+      <div className={`${css.LoaderWrapper} ${isLoaded ? css.hidden : ''}`}>
         <Loader />
       </div>
 

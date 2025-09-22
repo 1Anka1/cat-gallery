@@ -3,6 +3,7 @@ import css from './Modal.module.css';
 import { useEffect } from 'react';
 
 export default function Modal({ children, setIsModalOpen }) {
+
   useEffect(() => {
     const closeModal = ({ target, currentTarget, code }) => {
       if (target === currentTarget || code === 'Escape') {
