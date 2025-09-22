@@ -1,0 +1,41 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  overflow-y: auto;
+  backdrop-filter: blur(2px);
+  padding: 8px;
+}
+
+.Inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 950px;
+  width: 100%;
+  max-height: 100%;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  fill: rgb(41, 57, 9);
+}
+
+.CloseButton :hover {
+  fill: rgb(192, 57, 57);
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 350ms var(--timing-function);
+}

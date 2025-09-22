@@ -1,0 +1,22 @@
+.Container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.ButtonRefresh {
+  width: 300px;
+  padding: 20px 10px;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
