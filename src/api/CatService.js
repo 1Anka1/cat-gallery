@@ -8,5 +8,6 @@ const instance = axios.create({
 
 export const CatService = async () => {
   const { data } = await instance.get();
-  return data;
+
+  return data.slice(1, 7);
 };
